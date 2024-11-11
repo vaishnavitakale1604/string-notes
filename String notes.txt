@@ -1,0 +1,37 @@
+String: is a class and it is immutable so it is final and all classes parent is object so extends with objects
+class final String extends object implements  charsequence, serilizable, compareable{
+in the string class there is many methods
+//code
+}
+
+1.String is non-primitive data type
+2.String is a class
+3.String is final class
+4.String extends object class
+5.aslo string implements charsequence   serilizable and comparable are interface 
+there are 3 ways to define a string a)String class b)String buffer c)String builder
+
+String contsatnt pool
+before 1.7v scp is in method area but method area is contant so it cannot extend there memory then is transfeer into heap area after 
+1.6v and heap area extends there memory at runtime also
+
+there is 
+a>by literal String s1="hello";
+by literal we create single objects in scp 
+
+b)by new keyword
+String str=new String("hello");
+we create two objects first one is in heap area another one is in scp
+
+
+Garbage collectorn does not work in a string constant pool or string literal pool because  if there is noone points to that object
+then there is always jvm is there and to point that object
+
+if someone is pointing to object garbage collector cannot clean that objectbut garbage collector works in heap area
+
+
+why string is final?
+because the security purpose and the if change the data then other string objects are changes.
+
+why immutable?
+we cannot change
